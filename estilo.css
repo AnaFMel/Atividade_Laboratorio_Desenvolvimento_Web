@@ -1,0 +1,19 @@
+        /*  .cabeçalho-nav {
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-repeat: repeat;
+        }
+*/
+        /*.fundo {
+            background-image: url('textura-amassado.jpg');
+            background-size: cover;
+            background-repeat: repeat;
+        }*/
+
+        .noMargin {
+            margin: 0;
+        }
+
+        .musicas {
+            padding: 4%;
+        }
