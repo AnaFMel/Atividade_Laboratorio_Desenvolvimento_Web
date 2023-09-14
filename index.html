@@ -36,13 +36,13 @@
             <div class="parallax-container">
                 <div class="parallax-images">
                     <div class="parallax-image-left">
-                        <img src="imgs/sol.png" alt="Sun">
+                        <img id="sol" src="imgs/sol.png" alt="Sun">
                     </div>
                     <div class="parallax-text" style="display: none;">
                         <p>Ana Clara Freire de Melo</p>
                     </div>
                     <div class="parallax-image-right">
-                        <img src="imgs/sol.png" alt="Moon">
+                        <img id="lua" height="260px" width="260px" src="imgs/lua.png" alt="Moon">
                     </div>
                 </div>
             </div>
@@ -56,29 +56,22 @@
                     <div class="col s4">
                         <img src="imgs/trabalho-placeholder.png" alt="">
                     </div>
-                    <div class="col s8">
-                        <span class="title">Profissional</span>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore
-                            et dolore magna aliqua. Sapien et ligula ullamcorper malesuada proin. Magna sit amet purus
-                            gravida
-                            quis blandit. Ac tincidunt vitae semper quis lectus nulla at volutpat diam. Diam vel quam
-                            elementum
-                            pulvinar etiam non quam. Commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae.
-                            Augue
-                            ut
-                            lectus arcu bibendum at varius. Ullamcorper morbi tincidunt ornare massa. Ac placerat
-                            vestibulum
-                            lectus mauris ultrices. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor
-                            purus.
+                    <div class="col s8 sobre">
+                        <h4>Profissional</h4>
+                        <p>Minha experiência no mercado de trabalho ainda é miníma, mas tem sido muito satisfatória para
+                            mim. Entrei na Guarda Mirim em Janeiro
+                            desse ano, e comecei a trabalhar em Março na Penha S/A. Atualmente trabalho no Setor de
+                            Manutenção de
+                            Frotas como Auxiliar Administrativo, mas estou sendo transferida para o setor de T.I.
+                            voltado ao Desenvolvmento de Sistemas.
                         </p>
                     </div>
                 </div>
             </li>
             <li class="collection-item avatar">
                 <div class="row">
-                    <div class="col s8">
-                        <span class="title">Sobre</span>
+                    <div class="col s8 sobre">
+                        <h4>Pessoal</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore
                             et dolore magna aliqua. Sapien et ligula ullamcorper malesuada proin. Magna sit amet purus
@@ -101,32 +94,46 @@
             </li>
 
         </ul>
-        <div class="musicas noMargin" id="musicas">
+        <div class="musicas noMargin preto" id="musicas">
             <div class="row container">
-                <div class="col s6">
+                <div class="col s4">
                     <iframe style="border-radius:12px"
                         src="https://open.spotify.com/embed/track/5iMXCDWA4FxPNcOnq0HrpJ?utm_source=generator"
                         width="100%" height="352" frameBorder="0" allowfullscreen=""
                         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                         loading="lazy"></iframe>
                 </div>
-                <div class="col s6">
+                <div class="col s4">
                     <iframe style="border-radius:12px"
                         src="https://open.spotify.com/embed/track/7I8ftQPSknxqIH8jiuh6iv?utm_source=generator&theme=0"
                         width="100%" height="352" frameBorder="0" allowfullscreen=""
                         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                         loading="lazy"></iframe>
                 </div>
-                <div class="col s6">
+                <div class="col s4">
+                    <iframe style="border-radius:12px"
+                        src="https://open.spotify.com/embed/track/1MONUudxAjEk76FJvzGhuD?utm_source=generator"
+                        width="100%" height="352" frameBorder="0" allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"></iframe>
+                </div>
+                <div class="col s4">
                     <iframe style="border-radius:12px"
                         src="https://open.spotify.com/embed/track/29FQEJUtBAnxWEkux39d7I?utm_source=generator&theme=0"
                         width="100%" height="352" frameBorder="0" allowfullscreen=""
                         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                         loading="lazy"></iframe>
                 </div>
-                <div class="col s6">
+                <div class="col s4">
                     <iframe style="border-radius:12px"
                         src="https://open.spotify.com/embed/track/6d4FWjx72iuRWzn1HwywLK?utm_source=generator"
+                        width="100%" height="352" frameBorder="0" allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"></iframe>
+                </div>
+                <div class="col s4">
+                    <iframe style="border-radius:12px"
+                        src="https://open.spotify.com/embed/track/56z2qI0gKcPthQF6l8AW3E?utm_source=generator&theme=0"
                         width="100%" height="352" frameBorder="0" allowfullscreen=""
                         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                         loading="lazy"></iframe>
@@ -135,32 +142,72 @@
         </div>
         <div id="livros">
             <div class="row noMargin center-align">
-                <div class="card hoverable col s4">
-                    <div class="card-image">
-                        <img width="290rem" height="620rem" src="imgs/kvothe.jpg">
-                    </div>
-                    <div class="card-content" style="display: none;">
-                        <p>Meu livro favorito. História fantástica, excelente e muito criativa.</p>
-                    </div>
-                </div>
-                <div class="card hoverable col s4">
-                    <div class="card-image">
-                        <img width="290rem" height="620rem" src="imgs/kvothe2.jpg">
-                    </div>
-                    <div class="card-content" style="display: none;">
-                        <p>Continuação do livro "O Nome do Vento". Uma ótima adição à Crônica do Matador do Rei</p>
+                <div class="col s4">
+                    <div class="card hoverable">
+                        <div class="card-image">
+                            <img src="imgs/kvothe.jpg">
+                        </div>
+                        <div class="card-content" style="display: none;">
+                            <p>Meu livro favorito. História fantástica, excelente e muito criativa.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="card hoverable col s4">
-                    <div class="card-image">
-                        <img width="290rem" height="620rem" src="imgs/doutorSono.jpg">
-                    </div>
-                    <div class="card-content" style="display: none;">
-                        <p>Continuação ao livro "Iluminado", do mesmo autor. Iluminado é bom, mas Doutor Sono é melhor.
-                        </p>
+                <div class="col s4">
+                    <div class="card hoverable">
+                        <div class="card-image">
+                            <img src="imgs/kvothe2.jfif">
+                        </div>
+                        <div class="card-content" style="display: none;">
+                            <p>Continuação do livro "O Nome do Vento". Uma ótima adição à Crônica do Matador do Rei</p>
+                        </div>
                     </div>
                 </div>
+                <div class="col s4">
+                    <div class="card hoverable">
+                        <div class="card-image">
+                            <img src="imgs/doutorSono.jpg">
+                        </div>
+                        <div class="card-content" style="display: none;">
+                            <p>Continuação ao livro "Iluminado", do mesmo autor. Iluminado é bom, mas Doutor Sono é
+                                melhor.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <div id="filmes">
+            <div class="row noMargin">
+                <div class="row preto telefone noMargin">
+                    <div class="col s4">
+                        <img class="filminhos" src="imgs/telefonepreto.png" alt="">
+
+                        <h5 id="sinopse" class="white-text sinopse-telefonepreto">Finney Shaw is a shy but clever
+                            13-year-old boy who's
+                            being
+                            held in a soundproof basement by
+                            a sadistic, masked killer.
+                            When a disconnected phone on the wall starts to ring, he soon discovers that he can hear
+                            the
+                            voices of the murderer's previous victims -- and they are
+                            dead set on making sure that what happened to them doesn't happen to Finney.
+                        </h5>
+                    </div>
+                    <div class="col s8">
+                        <div class="row">
+                            <img height="300px" width="600px" class="col offset-s4" src="imgs/telefonepreto-finney.png"
+                                alt="">
+                        </div>
+                        <div class="row">
+                            <img height="300px" width="600px" class="col offset-s1" src="imgs/telefonepreto-grabber.png"
+                                alt="">
+                        </div>
+                        <div class="row">
+                            <img height="300px" width="600px" class="col offset-s4" src="imgs/telefonepreto-gwen.png"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="noMargin" id="series">
@@ -172,7 +219,8 @@
                         </div>
                         <div class="card-stacked">
                             <div class="card-content">
-                                <p>Essa é uma série que fala sobre o amor e como ele permanece mesmo quando não tem mais para onde ir.</p>
+                                <p>Essa é uma série que fala sobre o amor e como ele permanece mesmo quando não tem mais
+                                    para onde ir.</p>
                             </div>
                         </div>
                     </div>
@@ -185,34 +233,6 @@
                         <div class="card-stacked">
                             <div class="card-content">
                                 <p>Série extremamente caótica e muito bem escrita.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="noMargin" id="filmes">
-            <div class="row noMargin">
-                <div class="col s8 offset-s1">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="imgs/telefonepreto.jpg">
-                        </div>
-                        <div class="card-stacked">
-                            <div class="card-content">
-                                <p>Meu favorito, esse é tudo o que eu mais gosto em um filme. A história é simples, porém cativante, e o filme não se estende sem necessidade. Os personagens são interessantes sem serem desnecessariamente complicados, e é um terror que não assusta, o que eu aprecio.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s8 offset-s3">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="imgs/trembala.jpg">
-                        </div>
-                        <div class="card-stacked">
-                            <div class="card-content">
-                                <p>Filme engraçado e bobo das melhores maneiras possíveis.</p>
                             </div>
                         </div>
                     </div>

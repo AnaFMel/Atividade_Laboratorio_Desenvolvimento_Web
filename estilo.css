@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro");
+:root {
+    --cor-principal: #583c3c;
+  }
 * {
     font-family: "Source Code Pro", sans-serif;
     margin: 0;
@@ -24,7 +27,7 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 10000;
-    background-color: #624c69;
+    background-color: var(--cor-principal);
 }
 
 header ul {
@@ -43,9 +46,11 @@ header ul li a {
 header ul li a:hover,
 header ul li a.active {
     background: white;
-    color: #624c69;
+    color: var(--cor-principal);
 }
+
 .parallax-container {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -60,19 +65,33 @@ header ul li a.active {
     margin: 0;
 }
 
+.parallax-image-left {
+    position: relative;
+}
+
+.parallax-image-right {
+    padding-top: 125px;
+    padding-left: 105px;
+    position: absolute;
+}
+
 img {
     max-width: 100%;
     height: auto;
 }
 
 .parallax-text {
-    text-align: center;
+    position: absolute;
     opacity: 0;
-    transition: opacity 1.5s ease-in-out;
+    transition: opacity 2s ease-in-out;
     padding: 1rem;
-    margin-top: 20%;
-    margin-bottom: 20%;
+    margin-top: 250px;
+    margin-bottom: 250px;
+    margin-left: 230px;
     background-color: white;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: center;
 }
 
 .noMargin {
@@ -83,11 +102,76 @@ img {
     padding: 4%;
 }
 
-#topo{
-background-color: #624c69;
+#topo {
+    background-color: var(--cor-principal);
 }
 
-footer{
-    background-color: #624c69;
+footer {
+    background-color: var(--cor-principal);
     padding: 3.5rem;
+}
+
+#lua {
+    z-index: 3;
+}
+
+#sol {
+    z-index: 2;
+}
+
+.card {
+    margin: 20px;
+}
+
+#livros{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.filminhos {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: absolute;
+    z-index: 1;
+}
+
+#sinopse {
+    margin-top: 200px;
+    margin-left: 10px;
+}
+
+#sinopse-segundo-paragrafo {
+    margin-left: 10px;
+}
+
+
+.telefone {
+    padding: 3rem;
+}
+
+.sobre {
+    margin-top: 20px;
+}
+
+.sinopse-telefonepreto:after {
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+}
+
+@keyframes pisca {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.preto{ 
+  background-image: linear-gradient(to bottom right,  var(--cor-principal), white);
 }

@@ -1,8 +1,6 @@
-const parallaxImages = document.querySelector('.parallax-images');
-const parallaxText = document.querySelector('.parallax-text');
-
 window.addEventListener('scroll', function () {
     const scrollPosition = window.scrollY;
+    const parallaxText = document.querySelector('.parallax-text');
 
     // Ajuste a velocidade do efeito parallax alterando o valor dividido abaixo
     const speed = 0.5;
@@ -21,31 +19,50 @@ window.addEventListener('scroll', function () {
         parallaxText.style.display = "none";
     }
 });
-function showIframe(element) {
-    // Aumenta o z-index do elemento atual para trazê-lo para a frente
-    element.style.zIndex = 2;
+document.addEventListener('DOMContentLoaded', function () {
+    var cards = document.querySelectorAll('.card');
 
-    // Reduz o z-index de todos os outros elementos para enviá-los para trás
-    const allContainers = document.querySelectorAll('.iframe-container');
-    allContainers.forEach(container => {
-        if (container !== element) {
-            container.style.zIndex = 1;
-        }
-    });
-}
-    document.addEventListener('DOMContentLoaded', function() {
-        var cards = document.querySelectorAll('.card');
+    cards.forEach(function (card) {
+        card.addEventListener('mouseover', function () {
+            var cardContent = card.querySelector('.card-content');
+            cardContent.style.display = 'block';
+        });
 
-        cards.forEach(function(card) {
-            card.addEventListener('mouseover', function() {
-                var cardContent = card.querySelector('.card-content');
-                cardContent.style.display = 'block';
-            });
-
-            card.addEventListener('mouseout', function() {
-                var cardContent = card.querySelector('.card-content');
-                cardContent.style.display = 'none';
-            });
+        card.addEventListener('mouseout', function () {
+            var cardContent = card.querySelector('.card-content');
+            cardContent.style.display = 'none';
         });
     });
+});
+
+function typeWrite(elemento) {
+    const textoArray = elemento.innerHTML.split('');
+    elemento.innerHTML = ' ';
+    textoArray.forEach(function (letra, i) {
+        setTimeout(function () {
+            elemento.innerHTML += letra;
+        }, 18 * i);
+    });
+}
+
+function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+function handleScroll() {
+    const titulo = document.querySelector('.sinopse-telefonepreto');
+    if (isElementInViewport(titulo)) {
+        typeWrite(titulo);
+        window.removeEventListener('scroll', handleScroll);
+    }
+}
+
+window.addEventListener('scroll', handleScroll);
+
 
