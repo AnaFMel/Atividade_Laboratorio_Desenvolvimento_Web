@@ -1,19 +1,93 @@
-        /*  .cabeçalho-nav {
-            background-image: url('background.jpg');
-            background-size: cover;
-            background-repeat: repeat;
-        }
-*/
-        /*.fundo {
-            background-image: url('textura-amassado.jpg');
-            background-size: cover;
-            background-repeat: repeat;
-        }*/
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro");
+* {
+    font-family: "Source Code Pro", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-weight: bolder;
+}
 
-        .noMargin {
-            margin: 0;
-        }
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: white;
+}
 
-        .musicas {
-            padding: 4%;
-        }
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+    background-color: #624c69;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: white;
+    border-radius: 20px;
+}
+
+header ul li a:hover,
+header ul li a.active {
+    background: white;
+    color: #624c69;
+}
+.parallax-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    overflow: hidden;
+}
+
+.parallax-images {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.parallax-text {
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+    padding: 1rem;
+    margin-top: 20%;
+    margin-bottom: 20%;
+    background-color: white;
+}
+
+.noMargin {
+    margin: 0;
+}
+
+.musicas {
+    padding: 4%;
+}
+
+#topo{
+background-color: #624c69;
+}
+
+footer{
+    background-color: #624c69;
+    padding: 3.5rem;
+}
