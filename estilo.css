@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro");
 :root {
-    --cor-principal: #583c3c;
+    --cor-principal: #5c3333;
   }
 * {
     font-family: "Source Code Pro", sans-serif;
@@ -174,4 +174,17 @@ footer {
 
 .preto{ 
   background-image: linear-gradient(to bottom right,  var(--cor-principal), white);
+}
+
+#seriesCeu{
+    background-image:
+    linear-gradient(to right, var(--cor-principal), transparent),
+    url('imgs/caminhodoceu.jpg');
+    height: 700px;
+}
+
+.sinopse-ceu{
+    width: 500px;
+    padding-top: 14rem;
+    padding-left: 1.2rem;
 }
