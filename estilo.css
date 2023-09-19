@@ -188,3 +188,22 @@ footer {
     padding-top: 14rem;
     padding-left: 1.2rem;
 }
+
+
+.bullettrain {
+    padding: 4rem;
+}
+
+#oUrso {
+    background-image: url("imgs/urso.jfif");
+    background-size: cover;
+    height: 900px;
+    margin: 0;
+}
+
+.sinopseUrso {
+    position: absolute;
+    padding-left:20px;
+    width: 330px;
+    z-index: 1;
+}
