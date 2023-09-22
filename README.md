@@ -1,2 +1,2 @@
-# Atividade_Laboratorio_Desenvolvimento_Web
-Atividade de versionamento e criação de site pessoal para a matéria de Laboratório de Desenvolvimento Web
+# Versionamento de Código - Laboratório de Desenvolvimento Web
+Atividade de versionamento de código através da criação de site pessoal/profissional.
